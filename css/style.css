@@ -350,6 +350,10 @@ img{
     cursor: pointer;
     margin-left: auto;
 }
+
+.contact__subtitle{
+    margin-bottom: var(--mb-2);
+}
 /* footer */
 .footer{
     background-color: var(--second-color);
