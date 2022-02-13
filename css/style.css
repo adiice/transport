@@ -176,12 +176,12 @@ img{
 /* home */
 .home{
     /* styling background img*/
-    background: url(img/first_bg.jpg)no-repeat center center fixed;
+    background: url(../img/background_home.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size:cover;
     background-size: cover;
-    background-color: rgb(0,0,0,.6);
+    background-color: rgb(0,0,0,.6); 
     background-blend-mode: overlay;
     /*End of styling background img*/
     

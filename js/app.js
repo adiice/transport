@@ -34,7 +34,7 @@ const sr = ScrollReveal({
 /* scroll home */
 sr.reveal('.home__title',{})
 sr.reveal('.button',{delay: 200})
-//sr.reveal('.home__img',{delay: 400})  //na razie off szukam pomysłu na bg foto
+sr.reveal('.home__img',{delay: 400})  //na razie off szukam pomysłu na bg foto
 sr.reveal('.home__social-icon',{delay: 800})
 sr.reveal('.home__social-icon',{interval: 400})
 
