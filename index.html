@@ -137,10 +137,10 @@
             
             <div class="contact__container bd-grid">
                 <form action="https://formsubmit.co/inforovotrans@gmail.com" class="contact__form" method="POST">
-                    <input type="text" name="company_name" placeholder="Nazwa firmy" class="contact__input" required>
-                    <input type="email" name="email" placeholder="e-mail do kontaktu" class="contact__input" required>
-                    <input type="number" name="phone" placeholder="telefon do kontaktu" class="contact__input" required>
-                    <textarea name="question" placeholder="Wpisz zapytanie" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="text" name="company_name" placeholder="Nazwa firmy" class="contact__input" required id="company_name_form">
+                    <input type="email" name="email" placeholder="e-mail do kontaktu" class="contact__input" required id="email_form">
+                    <input type="number" name="phone" placeholder="telefon do kontaktu" class="contact__input" required id="phone_form">
+                    <textarea name="question" placeholder="Wpisz zapytanie" id="" cols="0" rows="10" class="contact__input" required id="question_form"></textarea>
                     <<input type="hidden" name="_next" value="https://adiice.github.io/transport/">
                     <button class="contact__button button" id="submit__form">Wyślij</button>
                     <!-- <input type="button" value="Wyślij" class="contact__button button"> /test innego przycisku -->  
@@ -185,12 +185,28 @@
     <!-- script greetings for send e-mail-->
     <script type="text/javascript">
         $('#submit__form').click(function(){
-        swal({
-            title: "Success!",
-            text: "You send e-mail",
-            icon: "success",
-            button: "Back to page",
+        var company_name = $("company_name_form").val ();
+        var email = $("email_form").val();
+        var phone = $("phone_form").val();
+        var message = $("question_form").val();  
+
+        if(company_name == '' || email == '' || phone =='' || message =='') {
+            swal({
+            title: "Puste pola!",
+            text: "Proszę uzupełnić brakujące pola",
+            icon: "warning",
+            button: "Ok",
           });
+
+        }else{
+            swal({
+            title: "Dziękujemy za kontakt!",
+            text: "Twój e-mail został wysłany.",
+            icon: "success",
+            button: "Ok",
+          });
+        };
+
         });
     </script>
 </body>
