@@ -182,14 +182,14 @@
           });
     </script>
 
-    <!-- script greetings for send e-mail-->
+    <!-- script greetings for send e-mail 
     <script type="text/javascript">
         $('#submit__form').click(function(){
         var company_name = $("company_name_form").val ();
         var email = $("email_form").val();
         var phone = $("phone_form").val();
         var message = $("question_form").val();  
-
+               
         if(company_name == '' || email == '' || phone =='' || message =='') {
             swal({
             title: "Puste pola!",
@@ -208,6 +208,7 @@
         };
 
         });
+    <!--  Do poprawy / wyrzucenia  --> 
     </script>
 </body>
 </html>
