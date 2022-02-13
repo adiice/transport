@@ -271,13 +271,6 @@ img{
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
 }
-/* Base of skills icon style
-.services__icon{
-    font-size: 2rem;
-    margin-right: var(--mb-2);
-    color: var(--first-color);
-}
-*/
 .services__icon__html{
     font-size: 2rem;
     margin-right: var(--mb-2);
@@ -448,11 +441,11 @@ img{
     .about__img img{
         width: 350px;
     }
-    .skills__container{
+    .services__container{
         grid-template-columns: repeat(2,1fr);
         text-align: center;
     }
-    .skills__text__position{
+    .services__text__position{
         grid-column: 1 / 3;
     }
     .work__container{
